@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Beef Burguer",
+      "description": "Onion with cheese",
+      "price": "18.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer1.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    },
+    {
+      "id": 2,
+      "name": "Chicken Burguer",
+      "description": "Cheese with chicken",
+      "price": "12.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer2.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    },
+    {
+      "id": 3,
+      "name": "Classic Burguer",
+      "description": "Beef with lettuce",
+      "price": "24.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer3.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    },
+    {
+      "id": 4,
+      "name": "Grilled Burguer",
+      "description": "Griller Chicken",
+      "price": "14.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer4.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    },
+    {
+      "id": 5,
+      "name": "Grilled Burguer",
+      "description": "Griller Chicken",
+      "price": "14.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer5.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    },
+    {
+      "id": 6,
+      "name": "Grilled Burguer",
+      "description": "Griller Chicken",
+      "price": "14.00",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/emocio-21c3a.appspot.com/o/products%2FBurguer5.png?alt=media&token=9d15f526-731a-4ec7-a4ee-118e99793744"
+    }
+  ]
+}
