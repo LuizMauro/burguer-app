@@ -38,7 +38,7 @@ export default function AppRoutes() {
           borderTopColor: colors.bg,
           position: "absolute",
           backgroundColor: colors.bg,
-          margin: 6,
+          margin: 0,
           overflow: "hidden",
           borderRadius: 25,
           elevation: 1,

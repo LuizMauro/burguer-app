@@ -13,6 +13,7 @@ const Feed: React.FC = () => {
           {products.map((product) => (
             <ProductItem
               key={product.id}
+              descriptionFull={product.descriptionFull}
               id={product.id}
               name={product.name}
               description={product.description}

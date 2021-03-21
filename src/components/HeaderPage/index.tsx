@@ -14,7 +14,7 @@ export default function Header() {
       <BorderlessButton onPress={navigation.goBack}>
         <MaterialCommunityIcons
           name="chevron-left"
-          color={colors.yellow}
+          color={colors.fontColor}
           size={40}
         />
       </BorderlessButton>
@@ -27,11 +27,9 @@ export default function Header() {
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    marginTop: 25,
+    paddingTop: 50,
     backgroundColor: colors.bg,
-    borderBottomWidth: 1,
     borderColor: colors.bg,
-
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
