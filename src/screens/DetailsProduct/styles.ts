@@ -44,6 +44,9 @@ export const PriceText = styled.Text`
   color: ${colors.yellow};
   font-weight: bold;
   font-size: 12px;
+  font-size: 16px;
+  padding: 20px;
+  padding-top: 0px;
 `;
 
 export const BottomContainer = styled.View`

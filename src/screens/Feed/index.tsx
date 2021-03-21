@@ -2,12 +2,39 @@ import React from "react";
 import ProductItem from "../../components/Product";
 import { products } from "../../data/products.json";
 
+import { Entypo } from "@expo/vector-icons";
+
 import * as S from "./styles";
+import { colors } from "../../@styles/colors";
 
 const Feed: React.FC = () => {
+  // '\u2B24'
+
   return (
     <S.Container>
-      <S.headerContainer />
+      <S.headerContainer>
+        <S.Title>Every Bite a</S.Title>
+        <S.SubTitle>Better buger!</S.SubTitle>
+
+        <S.ContainerFilterTag>
+          <S.ButtonFilterTag>
+            <S.TextBulletTag>{"\u2B24"}</S.TextBulletTag>
+            <S.TextButtonFilterTag>Burger</S.TextButtonFilterTag>
+          </S.ButtonFilterTag>
+
+          <S.ButtonFilterTag>
+            <S.TextButtonFilterTag>Pasta</S.TextButtonFilterTag>
+          </S.ButtonFilterTag>
+
+          <S.ButtonFilterTag>
+            <S.TextButtonFilterTag>Salads</S.TextButtonFilterTag>
+          </S.ButtonFilterTag>
+
+          <S.ButtonMoreFilters>
+            <Entypo name="sound-mix" color={colors.fontColor} size={18} />
+          </S.ButtonMoreFilters>
+        </S.ContainerFilterTag>
+      </S.headerContainer>
       <S.ContainerScroll>
         <S.ContainerItem>
           {products.map((product) => (

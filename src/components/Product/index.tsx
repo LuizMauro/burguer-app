@@ -4,7 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { IProduct } from "../../@interfaces/product";
 import FormatMoney from "../../utils/FormatMoney";
 
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+// import { MaterialCommunityIcons } from "@expo/vector-icons";
 import * as S from "./styles";
 
 const Product: React.FC<IProduct> = ({
@@ -43,9 +43,9 @@ const Product: React.FC<IProduct> = ({
         <S.DescriptionProduct>{description}</S.DescriptionProduct>
         <S.BuyContainer>
           <S.PriceText>{FormatMoney(price)}</S.PriceText>
-          <S.ButtonAddCart>
+          {/* <S.ButtonAddCart>
             <MaterialCommunityIcons name="plus" color="#f9f9fb" size={12} />
-          </S.ButtonAddCart>
+          </S.ButtonAddCart> */}
         </S.BuyContainer>
       </S.DetailsContainer>
     </S.Container>

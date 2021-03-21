@@ -32,6 +32,7 @@ const DetailsProduct: React.FC = () => {
       <S.Image source={{ uri: product.imageURL }} />
       <S.DetailsContainer>
         <S.NameProduct>{product.name}</S.NameProduct>
+        <S.PriceText>{FormatMoney(product.price)}</S.PriceText>
         <S.DescriptionProduct>{product.descriptionFull}</S.DescriptionProduct>
       </S.DetailsContainer>
 
