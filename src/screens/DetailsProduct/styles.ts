@@ -94,6 +94,7 @@ export const PriceFinal = styled.Text`
 `;
 
 export const ButtonCheckout = styled.TouchableOpacity`
+  flex-direction: row;
   width: 130px;
   height: 50px;
   background-color: ${colors.yellow};
@@ -107,4 +108,8 @@ export const TextButtonCheckout = styled.Text`
   color: ${colors.fontColor};
   font-size: 16px;
   font-weight: bold;
+`;
+
+export const ButtonShared = styled.TouchableOpacity`
+  padding: 20px;
 `;

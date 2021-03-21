@@ -6,6 +6,7 @@ import { IProduct } from "../../@interfaces/product";
 import FormatMoney from "../../utils/FormatMoney";
 
 import * as S from "./styles";
+import { colors } from "../../@styles/colors";
 
 interface IParams {
   product: IProduct;
@@ -53,6 +54,11 @@ const DetailsProduct: React.FC = () => {
           <S.PriceFinal>{FormatMoney(product.price * quantity)}</S.PriceFinal>
           <S.ButtonCheckout>
             <S.TextButtonCheckout>Checkout</S.TextButtonCheckout>
+            <MaterialCommunityIcons
+              name="chevron-right"
+              color={colors.fontColor}
+              size={30}
+            />
           </S.ButtonCheckout>
         </S.ContainerPriceCheckout>
       </S.BottomContainer>

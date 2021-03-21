@@ -6,7 +6,11 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 import { colors } from "../../@styles/colors";
 
-export default function Header() {
+interface IProps {
+  ButtonLeft: React.ReactNode | null;
+}
+
+export default function Header({ ButtonLeft }: IProps) {
   const navigation = useNavigation();
 
   return (
@@ -19,7 +23,7 @@ export default function Header() {
         />
       </BorderlessButton>
 
-      <View />
+      {ButtonLeft}
     </View>
   );
 }

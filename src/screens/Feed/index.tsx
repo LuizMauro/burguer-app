@@ -2,7 +2,7 @@ import React from "react";
 import ProductItem from "../../components/Product";
 import { products } from "../../data/products.json";
 
-import { Entypo } from "@expo/vector-icons";
+import { FontAwesome } from "@expo/vector-icons";
 
 import * as S from "./styles";
 import { colors } from "../../@styles/colors";
@@ -31,7 +31,7 @@ const Feed: React.FC = () => {
           </S.ButtonFilterTag>
 
           <S.ButtonMoreFilters>
-            <Entypo name="sound-mix" color={colors.fontColor} size={18} />
+            <FontAwesome name="sliders" color={colors.fontColor} size={18} />
           </S.ButtonMoreFilters>
         </S.ContainerFilterTag>
       </S.headerContainer>
