@@ -6,27 +6,43 @@ import {
   Entypo,
   Feather,
 } from "@expo/vector-icons";
-import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+// import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 
 import Feed from "./Feed/feed.routes";
 
 import { colors } from "../@styles/colors";
+import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
 
-const Tab = createMaterialBottomTabNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function AppRoutes() {
+  const getTabBarVisibility = (route: any) => {
+    const routeName = getFocusedRouteNameFromRoute(route) || "";
+    const hideOnScreens = ["DetailsProduct"];
+    if (hideOnScreens.indexOf(routeName) > -1) return false;
+    return true;
+  };
+
   return (
     <Tab.Navigator
       initialRouteName="Feed"
-      activeColor={colors.yellow}
-      inactiveColor={colors.fontColor}
-      barStyle={{
-        position: "absolute",
+      sceneContainerStyle={{
+        borderTopColor: colors.bg,
         backgroundColor: colors.bg,
-        margin: 25,
-        overflow: "hidden",
-        borderRadius: 25,
-        elevation: 1,
+      }}
+      tabBarOptions={{
+        activeTintColor: colors.yellow,
+        inactiveTintColor: colors.fontColor,
+        style: {
+          borderTopColor: colors.bg,
+          position: "absolute",
+          backgroundColor: colors.bg,
+          margin: 6,
+          overflow: "hidden",
+          borderRadius: 25,
+          elevation: 1,
+        },
       }}
     >
       <Tab.Screen
@@ -54,12 +70,13 @@ export default function AppRoutes() {
       <Tab.Screen
         name="Feed"
         component={Feed}
-        options={{
+        options={({ route }) => ({
+          tabBarVisible: getTabBarVisibility(route),
           tabBarLabel: "",
           tabBarIcon: ({ color }) => (
             <Entypo name="list" color={color} size={25} />
           ),
-        }}
+        })}
       />
 
       <Tab.Screen

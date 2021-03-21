@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
+
 import { IProduct } from "../../@interfaces/product";
 
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -10,9 +12,11 @@ const Product: React.FC<IProduct> = ({
   price,
   imageURL,
 }) => {
+  const { navigate } = useNavigation();
+
   return (
     <S.Container>
-      <S.ButtonImage onPress={() => console.log(name)}>
+      <S.ButtonImage onPress={() => navigate("DetailsProduct", { imageURL })}>
         <S.Image
           source={{
             uri: imageURL,
