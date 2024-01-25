@@ -1,6 +1,6 @@
 # BurguerApp
 
-Layout que serviu de inspiração [https://dribbble.com/shots/14952712/attachments/6670045?mode=media](https://dribbble.com/shots/14952712-Food-Mobile-App-Design)
+Layout que serviu de inspiração [https://dribbble.com/shots/14952712-Food-Mobile-App-Design]
 
 Página principal
 
